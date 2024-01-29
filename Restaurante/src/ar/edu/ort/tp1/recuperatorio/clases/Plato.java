@@ -18,7 +18,7 @@ public abstract class Plato implements Mostrable {
 
 	public void setNombre(String nombre) {
 		//TODO A completar
-		if (nombre == null || nombre.isBlank()) {
+		if (nombre == null || nombre.isEmpty()) {
 			throw new IllegalArgumentException(MSG_NOMBRE_INVALIDO);
 		}
 		this.nombre = nombre;

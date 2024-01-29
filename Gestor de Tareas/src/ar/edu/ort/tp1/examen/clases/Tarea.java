@@ -2,9 +2,9 @@ package ar.edu.ort.tp1.examen.clases;
 //TODO
 public abstract class Tarea implements Vigencia, Mostrable {
 
-	private static final String MSG_PRIORIDAD_INVALIDA = "Prioridad inválida";
-	private static final String MSG_FECHA_INVALIDA = "Fecha de inicio inválida";
-	private static final String MSG_DESCRIPCION_INVALIDA = "La descripcion no puede ser nula ni vacía";
+	private static final String MSG_PRIORIDAD_INVALIDA = "Prioridad invï¿½lida";
+	private static final String MSG_FECHA_INVALIDA = "Fecha de inicio invï¿½lida";
+	private static final String MSG_DESCRIPCION_INVALIDA = "La descripcion no puede ser nula ni vacï¿½a";
 	private String descripcion;
 	private Fecha fechaInicio;
 	private Prioridad prioridad;
@@ -24,7 +24,7 @@ public abstract class Tarea implements Vigencia, Mostrable {
 
 	private void setDescripcion(String descripcion) {
 
-		if (descripcion == null || descripcion.isBlank()) {
+		if (descripcion == null || descripcion.isEmpty()) {
 			throw new IllegalArgumentException(MSG_DESCRIPCION_INVALIDA);
 		}
 		this.descripcion = descripcion;
@@ -68,11 +68,11 @@ public abstract class Tarea implements Vigencia, Mostrable {
 	
 	@Override
 	public void mostrar() {
-		System.out.print(getTipo() + " - Descripción: " + descripcion + " - Prioridad: " + prioridad
+		System.out.print(getTipo() + " - Descripciï¿½n: " + descripcion + " - Prioridad: " + prioridad
 				+ " - Fecha de inicio: " + fechaInicio + " - " + vencidaONo());
 	}
 
 	private String vencidaONo() {
-		return (!estaVencido() ? "No " : "") + "está vencida";
+		return (!estaVencido() ? "No " : "") + "estï¿½ vencida";
 	}
 }

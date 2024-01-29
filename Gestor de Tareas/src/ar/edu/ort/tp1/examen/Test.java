@@ -13,7 +13,7 @@ public class Test {
 		Gestor gestor = new Gestor();
 
 		registrarTareas(gestor);
-		System.out.println("-".repeat(80));
+		System.out.println("-");
 		listarTareas(gestor);
 
 	}
@@ -22,7 +22,7 @@ public class Test {
 
 		System.out.println("Test - Registrando tareas");
 		registrarTareaNula(gestor);
-		registrarAuditoria(gestor, "Servidores sistema Compra sin actualización", 2, 6, 2023, Prioridad.MEDIA, 2, 9,
+		registrarAuditoria(gestor, "Servidores sistema Compra sin actualizaciï¿½n", 2, 6, 2023, Prioridad.MEDIA, 2, 9,
 				2024, false);
 		registrarAuditoria(gestor, "Alta digital clientes sin prueba de vida", 15, 5, 2023, Prioridad.ALTA, 14, 6, 2023,
 				true);
@@ -33,7 +33,7 @@ public class Test {
 		registrarAuditoria(gestor, "Central de auditoria Fecha inicio mal", 30, 2, 2023, Prioridad.MEDIA, 10, 11, 2023,
 				true);
 
-		registrarBug(gestor, "Título mal mostrado", 7, 10, 2023, Prioridad.MEDIA, 15, 11, 2023, false);
+		registrarBug(gestor, "Tï¿½tulo mal mostrado", 7, 10, 2023, Prioridad.MEDIA, 15, 11, 2023, false);
 		registrarTareaNula(gestor);
 		registrarBug(gestor, "Fecha Vto Error", 1, 1, 2023, Prioridad.BAJA, 31, 2, 2023, true);
 		registrarBug(gestor, "Listado de clientes desordenado", 30, 9, 2023, Prioridad.MEDIA, 19, 11, 2023, false);
@@ -42,10 +42,10 @@ public class Test {
 		registrarMejora(gestor, "Mejora sin prioridad", 1, 1, 2022, null, "Mejora sin prioridad");
 		registrarTareaNula(gestor);
 		registrarMejora(gestor, "Nuevo formato pantalla login", 30, 9, 2023, Prioridad.MEDIA, "ABM Clientes");
-		registrarMejora(gestor, "Soportar clientes con condición final", 1, 8, 2023, Prioridad.ALTA, "ABM Clientes");
-		registrarMejora(gestor, "Emisión de facturas electrónicas", 1, 3, 2019, Prioridad.MEDIA, "ERP");
+		registrarMejora(gestor, "Soportar clientes con condiciï¿½n final", 1, 8, 2023, Prioridad.ALTA, "ABM Clientes");
+		registrarMejora(gestor, "Emisiï¿½n de facturas electrï¿½nicas", 1, 3, 2019, Prioridad.MEDIA, "ERP");
 		registrarTareaNula(gestor);
-		registrarMejora(gestor, "Quitar campo teléfono fijo", 1, 5, 2022, Prioridad.MEDIA, "Vendedores");
+		registrarMejora(gestor, "Quitar campo telï¿½fono fijo", 1, 5, 2022, Prioridad.MEDIA, "Vendedores");
 	}
 
 	//TODO
@@ -66,7 +66,7 @@ public class Test {
 			gestor.registrarTarea(new TareaAuditoria(descripcion, diaInicio, mesInicio, anioInicio, prioridad, diaVto,
 					mesVto, anioVto, externa));
 		} catch (IllegalArgumentException e) {
-			System.out.println("Error registrando auditoría - " + e.getMessage());
+			System.out.println("Error registrando auditorï¿½a - " + e.getMessage());
 		}
 	}
 	//TODO
