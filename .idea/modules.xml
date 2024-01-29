@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/App_Peliculas/App_Peliculas.iml" filepath="$PROJECT_DIR$/App_Peliculas/App_Peliculas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cambio Climatico/Cambio Climatico.iml" filepath="$PROJECT_DIR$/Cambio Climatico/Cambio Climatico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gestor de Tareas/Gestor de Tareas.iml" filepath="$PROJECT_DIR$/Gestor de Tareas/Gestor de Tareas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProyectosJava.iml" filepath="$PROJECT_DIR$/.idea/ProyectosJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Restaurante/Restaurante.iml" filepath="$PROJECT_DIR$/Restaurante/Restaurante.iml" />
+    </modules>
+  </component>
+</project>
